@@ -1,5 +1,7 @@
 # Ayu
 
+![Ayu Mirage and Ayu Light](assets/preview.png)
+
 An Obsidian theme in the Ayu colourway: Ayu Light for the light scheme and Ayu Mirage for the dark, from their iTerm2 schemes ([iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)). Colours follow Ta Da's Ayu theme set.
 
 ## Colours
