@@ -1,0 +1,387 @@
+/* Ayu: Ayu Light and Ayu Mirage from their iTerm2 schemes, with Ta Da's Ayu tokens. */
+
+/* Colours */
+
+.theme-light {
+	--ayu-strong: #333538;
+
+	--color-base-00: #f8f9fa;
+	--color-base-05: #f4f5f6;
+	--color-base-10: #f0f1f3;
+	--color-base-20: #eceeef;
+	--color-base-25: #e8eaeb;
+	--color-base-30: #dfe1e2;
+	--color-base-35: #d6d8d9;
+	--color-base-40: #c9cbce;
+	--color-base-50: #babcbf;
+	--color-base-60: #a2a5a9;
+	--color-base-70: #686868;
+	--color-base-100: #5c6166;
+	--mono-rgb-100: 51, 53, 56;
+
+	--color-red-rgb: 229, 106, 107;
+	--color-red: #e56a6b;
+	--color-orange-rgb: 207, 121, 77;
+	--color-orange: #cf794d;
+	--color-yellow-rgb: 184, 132, 53;
+	--color-yellow: #b88435;
+	--color-green-rgb: 91, 160, 56;
+	--color-green: #5ba038;
+	--color-cyan-rgb: 60, 160, 127;
+	--color-cyan: #3ca07f;
+	--color-blue-rgb: 48, 150, 220;
+	--color-blue: #3096dc;
+	--color-purple-rgb: 158, 117, 199;
+	--color-purple: #9e75c7;
+	--color-pink-rgb: 163, 122, 204;
+	--color-pink: #a37acc;
+
+	--accent-h: 204.4;
+	--accent-s: 71.1%;
+	--accent-l: 52.5%;
+
+	--background-primary: #f8f9fa;
+	--background-primary-alt: #f0f1f3;
+	--background-secondary: #eff0f1;
+	--background-modifier-border: #e8eaeb;
+	--background-modifier-border-hover: #dfe1e2;
+	--background-modifier-form-field: #f0f1f3;
+	--text-normal: #5c6166;
+	--text-muted: #686868;
+	--text-faint: #939494;
+	--text-selection: #dfe1e2;
+	--text-highlight-bg: rgba(184, 132, 53, 0.3);
+	--tag-background: rgba(48, 150, 220, 0.1);
+	--tag-background-hover: rgba(48, 150, 220, 0.16);
+	--tag-border-color: rgba(48, 150, 220, 0.28);
+	--tag-border-color-hover: rgba(48, 150, 220, 0.34);
+}
+
+.theme-dark {
+	--ayu-strong: #e3e2dd;
+
+	--color-base-00: #1f2430;
+	--color-base-05: #232834;
+	--color-base-10: #282c37;
+	--color-base-20: #2c303b;
+	--color-base-25: #30353f;
+	--color-base-30: #3b3f47;
+	--color-base-35: #454950;
+	--color-base-40: #53565c;
+	--color-base-50: #64666a;
+	--color-base-60: #7e7f80;
+	--color-base-70: #8e8e8d;
+	--color-base-100: #cccac2;
+	--mono-rgb-100: 227, 226, 221;
+
+	--color-red-rgb: 237, 130, 116;
+	--color-red: #ed8274;
+	--color-orange-rgb: 243, 167, 113;
+	--color-orange: #f3a771;
+	--color-yellow-rgb: 250, 204, 110;
+	--color-yellow: #facc6e;
+	--color-green-rgb: 135, 217, 108;
+	--color-green: #87d96c;
+	--color-cyan-rgb: 144, 225, 198;
+	--color-cyan: #90e1c6;
+	--color-blue-rgb: 109, 203, 250;
+	--color-blue: #6dcbfa;
+	--color-purple-rgb: 218, 186, 250;
+	--color-purple: #dabafa;
+	--color-pink-rgb: 223, 191, 255;
+	--color-pink: #dfbfff;
+
+	--accent-h: 200;
+	--accent-s: 93.4%;
+	--accent-l: 70.4%;
+
+	--background-primary: #1f2430;
+	--background-primary-alt: #282c37;
+	--background-secondary: #191e27;
+	--background-modifier-border: #30353f;
+	--background-modifier-border-hover: #3b3f47;
+	--background-modifier-form-field: #282c37;
+	--text-normal: #cccac2;
+	--text-muted: #8e8e8d;
+	--text-faint: #6d6e71;
+	--text-selection: #3b3f47;
+	--text-highlight-bg: rgba(250, 204, 110, 0.26);
+	--tag-background: rgba(109, 203, 250, 0.14);
+	--tag-background-hover: rgba(109, 203, 250, 0.2);
+	--tag-border-color: rgba(109, 203, 250, 0.32);
+	--tag-border-color-hover: rgba(109, 203, 250, 0.38);
+}
+
+/* Roles shared by both schemes */
+
+body {
+	--font-monospace-theme: "JetBrains Mono", "SF Mono", Menlo, monospace;
+
+	--text-on-accent: var(--background-primary);
+	--caret-color: var(--interactive-accent);
+
+	--h1-color: var(--ayu-strong);
+	--h2-color: var(--ayu-strong);
+	--h3-color: var(--ayu-strong);
+	--h4-color: var(--ayu-strong);
+	--h5-color: var(--ayu-strong);
+	--h6-color: var(--text-muted);
+
+	--link-color: var(--color-purple);
+	--link-color-hover: var(--color-purple);
+	--link-external-color: var(--color-purple);
+	--link-external-color-hover: var(--color-purple);
+	--link-unresolved-color: var(--text-muted);
+	--link-unresolved-opacity: 1;
+	--link-unresolved-decoration-style: dashed;
+	--link-unresolved-decoration-color: var(--text-muted);
+
+	--tag-color: var(--interactive-accent);
+	--tag-color-hover: var(--interactive-accent);
+	--tag-border-width: 1px;
+
+	--code-background: var(--background-primary-alt);
+	--code-normal: var(--ayu-strong);
+	--code-radius: 6px;
+
+	--blockquote-border-thickness: 3px;
+	--blockquote-border-color: var(--background-modifier-border-hover);
+	--blockquote-color: var(--text-muted);
+
+	--list-marker-color: var(--text-muted);
+
+	--table-border-color: var(--background-modifier-border);
+	--table-header-background: var(--background-primary-alt);
+
+	--scrollbar-bg: transparent;
+	--scrollbar-thumb-bg: var(--background-modifier-border-hover);
+	--scrollbar-active-thumb-bg: var(--text-muted);
+
+	--callout-radius: 10px;
+	--callout-border-width: 1px;
+	--callout-blend-mode: normal;
+	--callout-question: var(--color-yellow);
+	--callout-quote: var(--text-muted);
+}
+
+/* Inline code and highlights: rounded spans with strong text; inline code has a border ring. */
+
+.markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code:not(.cm-formatting) {
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+
+.markdown-rendered mark,
+.markdown-source-view.mod-cm6 .cm-highlight {
+	color: var(--ayu-strong);
+	border-radius: 6px;
+}
+
+/* Code blocks */
+
+.markdown-rendered pre {
+	border-radius: 10px;
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+
+/* Callouts: the type's colour at 9% (14% dark) with a 24% (30%) ring; strong titles. */
+
+.callout {
+	background-color: color-mix(in oklch, var(--callout-color) 9%, transparent);
+	--callout-border-opacity: 0.24;
+}
+
+.theme-dark .callout {
+	background-color: color-mix(in oklch, var(--callout-color) 14%, transparent);
+	--callout-border-opacity: 0.3;
+}
+
+.callout-title-inner {
+	color: var(--ayu-strong);
+}
+
+.callout-fold {
+	color: var(--text-muted);
+}
+
+/* Checkboxes: the Alternative Checkboxes Reference Set, drawn as Ta Da's 16-unit boxes.
+   Each marker sets its tint and glyph; Done and Important fill the box and draw the glyph in the background colour.
+   Obsidian strikes Done; Cancelled is struck the same way. */
+
+body input[type="checkbox"].task-list-item-checkbox:is(*, :checked, :hover) {
+	border: none;
+	border-radius: 25%;
+	background-color: var(--task-fill, transparent);
+}
+
+body input[type="checkbox"].task-list-item-checkbox:is(*, :checked)::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	inset-inline-start: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-mask-image: var(--task-glyph, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E"));
+	-webkit-mask-size: 100% 100%;
+	-webkit-mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	mask-image: var(--task-glyph, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E"));
+	mask-size: 100% 100%;
+	mask-position: center;
+	mask-repeat: no-repeat;
+	background-color: var(--task-ink, var(--text-muted));
+}
+
+ul > li.task-list-item[data-task="-"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
+	text-decoration: var(--checklist-done-decoration);
+	color: var(--checklist-done-color);
+}
+
+/* Every task line resets the variables, so a nested item never takes its parent's. */
+:is(li, .HyperMD-task-line, input)[data-task] {
+	--task-tint: var(--text-muted);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E");
+	--task-fill: transparent;
+	--task-ink: var(--task-tint);
+}
+
+/* [x] Done */
+:is(li, .HyperMD-task-line, input)[data-task="x"] {
+	--task-tint: var(--color-green);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 8.2l2 2 4-4.4' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+	--task-fill: var(--task-tint);
+	--task-ink: var(--background-primary);
+}
+
+/* [X] Done */
+:is(li, .HyperMD-task-line, input)[data-task="X"] {
+	--task-tint: var(--color-green);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 8.2l2 2 4-4.4' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+	--task-fill: var(--task-tint);
+	--task-ink: var(--background-primary);
+}
+
+/* [/] Doing */
+:is(li, .HyperMD-task-line, input)[data-task="/"] {
+	--task-tint: var(--color-cyan);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5.5 5.5h5v5h-5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [-] Cancelled */
+:is(li, .HyperMD-task-line, input)[data-task="-"] {
+	--task-tint: var(--text-muted);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5.2 10.8l5.6-5.6' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [>] Forwarded */
+:is(li, .HyperMD-task-line, input)[data-task=">"] {
+	--task-tint: var(--interactive-accent);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 8h6M8.6 5.6L11 8l-2.4 2.4' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [<] Scheduling */
+:is(li, .HyperMD-task-line, input)[data-task="<"] {
+	--task-tint: var(--color-yellow);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 6.2h6v5.2H5zM5 8.2h6M6.8 4.6v2M9.2 4.6v2' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [?] Question */
+:is(li, .HyperMD-task-line, input)[data-task="?"] {
+	--task-tint: var(--color-cyan);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M6.3 6.4a1.8 1.8 0 1 1 2.5 1.6c-.5.3-.8.6-.8 1.1' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.35 11.1a.65.65 0 1 0 1.3 0a.65.65 0 1 0-1.3 0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [!] Important */
+:is(li, .HyperMD-task-line, input)[data-task="!"] {
+	--task-tint: var(--color-red);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 4.9v3.6' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.3 10.9a.7.7 0 1 0 1.4 0a.7.7 0 1 0-1.4 0z'/%3E%3C/g%3E%3C/svg%3E");
+	--task-fill: var(--task-tint);
+	--task-ink: var(--background-primary);
+}
+
+/* [*] Star */
+:is(li, .HyperMD-task-line, input)[data-task="*"] {
+	--task-tint: var(--color-yellow);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 4.4l1.1 2.2 2.4.35-1.75 1.7.42 2.4L8 9.9l-2.17 1.15.42-2.4L4.5 6.95l2.4-.35z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ["] Quote */
+:is(li, .HyperMD-task-line, input)[data-task='"'] {
+	--task-tint: var(--text-muted);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M4.9 6.3h2.5v2.4c0 1.3-.7 2.2-2 2.6v-.9c.6-.3.9-.7.9-1.3H4.9zM8.6 6.3h2.5v2.4c0 1.3-.7 2.2-2 2.6v-.9c.6-.3.9-.7.9-1.3H8.6z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [l] Location */
+:is(li, .HyperMD-task-line, input)[data-task="l"] {
+	--task-tint: var(--color-purple);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 11.6s2.8-2.4 2.8-4.5a2.8 2.8 0 0 0-5.6 0c0 2.1 2.8 4.5 2.8 4.5z' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.3 7.1a.7.7 0 1 0 1.4 0a.7.7 0 1 0-1.4 0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [b] Bookmark */
+:is(li, .HyperMD-task-line, input)[data-task="b"] {
+	--task-tint: var(--color-orange);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5.8 4.7h4.4v6.7L8 9.9l-2.2 1.5z' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [i] Information */
+:is(li, .HyperMD-task-line, input)[data-task="i"] {
+	--task-tint: var(--interactive-accent);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 7.5v3.3' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.3 5.5a.7.7 0 1 0 1.4 0a.7.7 0 1 0-1.4 0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [S] Savings */
+:is(li, .HyperMD-task-line, input)[data-task="S"] {
+	--task-tint: var(--color-green);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 4.4v7.2M9.8 6c-.3-.5-1-.8-1.8-.8-1 0-1.7.5-1.7 1.2 0 1.6 3.5.8 3.5 2.4 0 .7-.8 1.2-1.8 1.2-.8 0-1.5-.3-1.8-.8' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [I] Idea */
+:is(li, .HyperMD-task-line, input)[data-task="I"] {
+	--task-tint: var(--color-yellow);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M6.9 11.5h2.2M7 10.1h2c0-.9 1.6-1.4 1.6-3a2.6 2.6 0 0 0-5.2 0c0 1.6 1.6 2.1 1.6 3z' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [p] Pros */
+:is(li, .HyperMD-task-line, input)[data-task="p"] {
+	--task-tint: var(--color-green);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 7.6h1.3v3.8H5zM6.3 7.6l1.5-2.8c.7 0 1.1.5 1 1.1l-.2 1.3h1.8c.6 0 1 .5.9 1.1l-.5 2.2c-.1.5-.5.9-1 .9H6.3' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [c] Cons */
+:is(li, .HyperMD-task-line, input)[data-task="c"] {
+	--task-tint: var(--color-red);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 8.4h1.3V4.6H5zM6.3 8.4l1.5 2.8c.7 0 1.1-.5 1-1.1l-.2-1.3h1.8c.6 0 1-.5.9-1.1l-.5-2.2c-.1-.5-.5-.9-1-.9H6.3' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [f] Fire */
+:is(li, .HyperMD-task-line, input)[data-task="f"] {
+	--task-tint: var(--color-orange);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M8 11.6c1.6 0 2.7-1 2.7-2.5 0-1.8-1.6-2.6-1.6-4.5-1.2.7-1.6 1.8-1.6 2.6-.5-.3-.8-.8-.9-1.3-.8.8-1.3 1.8-1.3 3.2 0 1.5 1.1 2.5 2.7 2.5z' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [k] Key */
+:is(li, .HyperMD-task-line, input)[data-task="k"] {
+	--task-tint: var(--color-yellow);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M5 9.7a1.6 1.6 0 1 0 3.2 0a1.6 1.6 0 1 0-3.2 0zM7.5 8.5l3.3-3.3M9.6 6.4l1 1' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [w] Win */
+:is(li, .HyperMD-task-line, input)[data-task="w"] {
+	--task-tint: var(--color-yellow);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M6 4.8h4v2.4a2 2 0 0 1-4 0zM6 5.6H4.8c0 1.2.5 1.8 1.4 1.9M10 5.6h1.2c0 1.2-.5 1.8-1.4 1.9M8 9.2v1.7M6.5 11.3h3' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [u] Up */
+:is(li, .HyperMD-task-line, input)[data-task="u"] {
+	--task-tint: var(--color-green);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M4.8 10.4l2.4-2.4 1.4 1.4 2.6-2.8M9.2 6.6h2v2' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* [d] Down */
+:is(li, .HyperMD-task-line, input)[data-task="d"] {
+	--task-tint: var(--color-red);
+	--task-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='.75' y='.75' width='14.5' height='14.5' rx='3.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cg transform='translate(8 8) scale(1.142857) translate(-8 -8)'%3E%3Cpath d='M4.8 5.6l2.4 2.4 1.4-1.4 2.6 2.8M9.2 9.4h2v-2' fill='none' stroke='black' stroke-width='1.3125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
