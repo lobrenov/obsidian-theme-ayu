@@ -1,4 +1,4 @@
-# Ayu
+# Ayu Simple
 
 ![Ayu Mirage and Ayu Light](assets/preview.png)
 
@@ -57,7 +57,7 @@ Done and Cancelled strike their text through in muted.
 
 ## Install
 
-Copy `manifest.json` and `theme.css` into `<vault>/.obsidian/themes/Ayu/`, then choose Ayu in Settings → Appearance → Themes.
+Copy `manifest.json` and `theme.css` into `<vault>/.obsidian/themes/Ayu Simple/`, then choose Ayu Simple in Settings → Appearance → Themes.
 
 ## Licence
 
